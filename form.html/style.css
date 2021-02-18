@@ -60,10 +60,11 @@ article .radio{
 }
 article button{
     padding: 15px 195px 15px 205px;
-    border:none;
-    border-radius: 4px;
+    border:outset;
+    border-radius: 10px;
     background: #2e91e1;
     font-family: 'Newsreader', serif;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 20px;
+
 }
