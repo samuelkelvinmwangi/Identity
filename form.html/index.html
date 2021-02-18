@@ -19,16 +19,16 @@
 
                 <div>
                     <label for="uname">Username<span style="color: red; font-size: 20xp;"></span></label>
-                    <input type="text" id="uname" placeholder="Enter username" pattern="[A,Z], [a,z], [0,9]" required>
+                    <input type="text" id="uname" placeholder="Enter username" pattern="(?=.*[A-Z])(?=.*[a-z]).{6,}" title="Minimum 6 characters" required>
                 </div>
 
                 <div>
                     <label for="pword">Password<span style="color: red; font-size: 20xp;"></span></label>
-                    <input type="password" id="pword" placeholder="Enter password" pattern="[a,z], [0,9]" required>
+                    <input type="password" id="pword" placeholder="Enter password" pattern="(?=.*[a-z])(?=.*[0-9]).{10,}" title="Minimum 10 characters"required>
                 </div>
 
                 <div><label for="mail">Email</label>
-                    <input type="email" id="mail" placeholder="Enter email" pattern="[a,z], [0,9], @, .">
+                    <input type="email" id="mail" placeholder="Enter email" pattern="[a-z]+@[a-z]+\.[a-z].{2,}">
                 </div>
 
                 <div class="radio">
@@ -49,7 +49,7 @@
 
                 <div>
                     <label for="phno">Contact<span style="color: red; font-size: 20xp;"></span></label>
-                    <input type="number" id="phno" placeholder="Enter contact" pattern="[0,9]" required>
+                    <input type="text" id="phno" placeholder="Enter contact" min="10" title="Length should be 10" required>
                 </div>
 
                 <div>
