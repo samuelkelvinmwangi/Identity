@@ -39,8 +39,8 @@ section{
     font-size: 20px;
     color: blue;
     padding: 5px
-    transform:translateX(-50%);
-    background-color: white;
+    transform-translateX(-50%);
+    background-color:white
 }
 
 .about .about-content{
