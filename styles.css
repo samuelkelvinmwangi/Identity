@@ -12,6 +12,11 @@
      font-size: 0.9em;
      color: whitesmoke;
  }
+ .image-background{
+    background: url(./Images/identity\ image.jpg)no-repeat center center/cover;
+    height: auto;
+    width: 100%;
+ }
 
  header{
     background: blue;
@@ -69,4 +74,10 @@
     opacity: 0.8;
     width: 20%;
     border-radius: 0.2em;
+}
+footer {
+    padding: 2.5rem;
+}
+footer p {
+    text-align: center;
 }
