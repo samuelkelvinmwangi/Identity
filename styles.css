@@ -1,0 +1,23 @@
+/*Google font*/
+*{
+    box-sizing: border-box;
+}
+ header,
+ section{
+     overflow-x: hidden;
+ }
+
+ header a{
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 0.9em;
+     color: whitesmoke;
+ }
+
+ header{
+    background: blue;
+    background: linear-gradient(blue);
+ }
+ header .nav-item:last-child{
+     padding-right: 10.5em;
+ }
+ 
