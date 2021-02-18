@@ -10,7 +10,7 @@
  header a{
      font-family: 'Courier New', Courier, monospace;
      font-size: 0.9em;
-     color: whitesmoke;
+     color: crimson;
  }
  .image-background{
     background: url(./Images/identity\ image.jpg)no-repeat center center/cover;
