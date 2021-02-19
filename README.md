@@ -5,7 +5,7 @@
 {This is a name finder website that determins the name to be given to individuals according to the ghanian culture. }
 ## Setup/Installation Requirements
 *This has no installation requirements since its a stand alone website. But the code to the website can be found in git hub below
-
+https://github.com/samuelkelvinmwangi/Identity.git
 ## Known Bugs
 Currently there are no bugs in place.
 ## Technologies Used
