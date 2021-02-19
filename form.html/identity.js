@@ -13,7 +13,7 @@ var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
             if (genders[1].checked) { gender_value = "female";}
             if (genders[0].checked) { gender_value = "male";}
         }
-
+gti
 
 switch (gender_value) {
     case "female":
@@ -60,6 +60,4 @@ switch (gender_value) {
         if (dayOfBirth == 6) {
             document.getElementById("display").innerHTML ="Day:" + day[6] + "name:" + maleNames[6];
         }
-        break;
-        default:
 }
