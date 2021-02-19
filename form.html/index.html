@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDENTITY FORM</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../form.html/style.css">
@@ -27,7 +29,7 @@
         <article>
             <form action="" method="GET">
                 <div>
-                    <h1>REGISTER<span style="color: red; font-size: 20xp;"></span></h1>
+                    <h1>GET AKAN NAME<span style="color: red; font-size: 20xp;"></span></h1>
                 </div>
 
                 <div>
@@ -56,8 +58,7 @@
                 </div>
 
                 <div>
-                    <label for="dob">Date of Birth<span style="color: red; font-size: 20xp;"></span></label>
-                    <input type="date" id="dob" placeholder="Enter date of Birth" required>
+                    <p>Date of Birth: <input type="text" id="datepicker"></p>
                 </div>
 
                 <div>
@@ -66,19 +67,26 @@
                 </div>
 
                 <div>
-                    <button>Submit</button>
+                    <button type="submit" class="submit-btn" onclick="dayOfBirth()">SUBMIT</button>
                 </div>
-
-                <div>
-                    <button>Reset</button>
-                </div>
+                <p id="display"></p>
+                
             </form>
 
         </article>
 
     </section>
+    <footer class="bg-light">
+        <p>Copyright &copy; IDENTITY 2021</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#datepicker" ).datepicker();
+    } );
+    </script>
+    <script src="../form.html/identity.js"></script>
 </body>
-<footer class="bg-light">
-    <p>Copyright &copy; IDENTITY 2021</p>
-</footer>
 </html>
