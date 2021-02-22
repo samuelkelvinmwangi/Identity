@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDENTITY FORM</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../form.html/style.css">
@@ -27,9 +26,9 @@
 
     <section>
         <article>
-            <form action="" method="GET">
+            <form id="itemForm">
                 <div>
-                    <h1>GET AKAN NAME<span style="color: red; font-size: 20xp;"></span></h1>
+                    <h1>GET  AKAN  NAME<span style="color: red; font-size: 20xp;"></span></h1>
                 </div>
 
                 <div>
@@ -48,17 +47,18 @@
 
                 <div class="radio">
                     <span>
-                        <input type="radio" id="male" value="gender" required>
+                        <input type="radio" id="male" value="male" required>
                         <label for="male" class="man">Male</label>
                     </span>
                     <span>
-                        <input type="radio" id="female" value="gender" required>
+                        <input type="radio" id="female" value="female" required>
                         <label for="female" class="woman">Female</label>
                     </span>
                 </div>
 
                 <div>
-                    <p>Date of Birth: <input type="text" id="datepicker"></p>
+                    <p>Date of Birth: </p>
+                    <input type="date" id="dob">
                 </div>
 
                 <div>
@@ -67,9 +67,8 @@
                 </div>
 
                 <div>
-                    <button type="submit" class="submit-btn" onclick="dayOfBirth()">SUBMIT</button>
+                    <button type="submit" class="submit-btn">submit</button>
                 </div>
-                <p id="display"></p>
                 
             </form>
 
@@ -80,13 +79,6 @@
         <p>Copyright &copy; IDENTITY 2021</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-    $( function() {
-      $( "#datepicker" ).datepicker();
-    } );
-    </script>
-    <script src="../form.html/identity.js"></script>
+    <script src="../form.html/htp.js"></script>
 </body>
 </html>
