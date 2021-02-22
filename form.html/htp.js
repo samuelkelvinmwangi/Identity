@@ -48,7 +48,6 @@ function clear () {
     username.value='';
     email.value='';
 }
-alert(console.log(dayOfWeekBorn))
 //var date = document.getElementById("dob");
 
 //    if (getGender() === "male") {
