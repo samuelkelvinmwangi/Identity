@@ -7,36 +7,26 @@ var contact=document.getElementById("phno");
 var submit = document.getElementById("btnSubmit");
 var male =document.getElementById("male");
 var female =document.getElementById("female");
-
-form.addEventListener("submit",function(event){
-	event.preventDefault();
-    console.log(date.value);
-    getGender()
-    getDate()
-    clear()
-	})
-
-
-    
+var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 function getGender (){
     if (male.checked == true) {
-        console.log("male");
+        return "male";
     }
-   else if (female.checked == true) {
-    console.log("female");
+   else  {
+    return "female";
     }
-    else {console.log("non checked")}
+   
 };
 
 
 function getDate (){
-    var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+   
     var day = new Date(date.value);
-var dayOfWeekBorn = days[day.getDay()];
-console.log(dayOfWeekBorn)
+    return day.getDay()
+
 }
 
 function clear () {
@@ -48,13 +38,23 @@ function clear () {
     username.value='';
     email.value='';
 }
-//var date = document.getElementById("dob");
 
-//    if (getGender() === "male") {
-//         newName = maleNames[day.Value]
-//         alert("your new name " + maleName);
-//    }
-//    if (getGender() === "female") {
-//     newName = femaleNames[day.Value]
-//     alert("your new name " + femaleName);
-// }
+form.addEventListener("submit",function(event){
+	event.preventDefault();
+    console.log(date.value);
+    let gender = getGender()
+    const day = getDate()
+    let akanName = ""
+    let days = ""
+
+    days = weekDays[day]
+
+    if ( gender === "male") {
+       akanName = maleNames[day]
+    }
+    else {
+        akanName = femaleNames[day]
+    }
+    alert(`Your Akan Name is ${akanName}   You were Born on a ${days}`)
+    clear()
+	})

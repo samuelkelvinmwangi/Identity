@@ -37,6 +37,11 @@ article h1{
     font-size: 25px;
     text-align: center;
 }
+article p{
+    
+    font-size:medium;
+    margin-left: 40px;
+}
 article sup{
     color: red;
 }
