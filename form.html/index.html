@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDENTITY FORM</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Newsreader&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../form.html/style.css">
@@ -13,9 +14,9 @@
 <body>
 
     <nav id="navbar">
-        <h2><a href="home"><span class="text-primary">IDENTITY</span></a></h2>
+        <h2><a href="https://samuelkelvinmwangi.github.io/Identity/"><span class="text-primary">IDENTITY</span></a></h2>
         <ul>
-            <li><a href="http://127.0.0.1:5500/source-html/index.html">HOME</a></li>
+            <li><a href="https://samuelkelvinmwangi.github.io/Identity/">HOME</a></li>
             <li><a href="http://127.0.0.1:5500/about.html/index.html">ABOUT</a></li>
             <li><a href="http://127.0.0.1:5500/form.html/index.html?">IDENTITY</a></li>
             <li><a href="http://127.0.0.1:5500/contact.html/index.html">CONTACT</a></li>
@@ -25,9 +26,9 @@
 
     <section>
         <article>
-            <form action="" method="GET">
+            <form id="itemForm">
                 <div>
-                    <h1>REGISTER<span style="color: red; font-size: 20xp;"></span></h1>
+                    <h1>GET  AKAN  NAME<span style="color: red; font-size: 20xp;"></span></h1>
                 </div>
 
                 <div>
@@ -46,18 +47,18 @@
 
                 <div class="radio">
                     <span>
-                        <input type="radio" id="male" value="gender" required>
+                        <input type="radio" id="male" value="male" required>
                         <label for="male" class="man">Male</label>
                     </span>
                     <span>
-                        <input type="radio" id="female" value="gender" required>
+                        <input type="radio" id="female" value="female" required>
                         <label for="female" class="woman">Female</label>
                     </span>
                 </div>
 
                 <div>
-                    <label for="dob">Date of Birth<span style="color: red; font-size: 20xp;"></span></label>
-                    <input type="date" id="dob" placeholder="Enter date of Birth" required>
+                    <p>Date of Birth: </p>
+                    <input type="date" id="dob">
                 </div>
 
                 <div>
@@ -66,19 +67,18 @@
                 </div>
 
                 <div>
-                    <button>Submit</button>
+                    <button type="submit" class="submit-btn">submit</button>
                 </div>
-
-                <div>
-                    <button>Reset</button>
-                </div>
+                
             </form>
 
         </article>
 
     </section>
+    <footer class="bg-light">
+        <p>Copyright &copy; IDENTITY 2021</p>
+    </footer>
+
+    <script src="../form.html/identity.js"></script>
 </body>
-<footer class="bg-light">
-    <p>Copyright &copy; IDENTITY 2021</p>
-</footer>
 </html>
