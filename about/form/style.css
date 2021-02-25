@@ -1,0 +1,115 @@
+body {
+    background-image: url(../Images/identity\ home-page\ image.jpg);
+    padding:0;
+    margin:0;
+}
+section{
+    background-color: #91c8ff;
+    width:35%;
+    margin:40px auto;
+    border-radius: 4px;
+    border: 5xp solid whitesmoke;
+}
+article div{
+    font-family: 'Newsreader', serif;
+    padding-bottom: 20px;
+}
+article label{
+    margin-left: 40px;
+    color: rgb(0,0,22);
+}
+article input{
+    width: 85%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-left: 40px;
+    box-sizing: none;
+    background:#91c8ff;
+    border: none;
+    font-size: medium;
+    border-bottom: 1px solid rgb(1,1,51);
+}
+::placeholder{
+    color: rgb(92,140,180);
+}
+article h1{
+    padding-top: 5px;
+    font-size: 25px;
+    text-align: center;
+}
+article p{
+    
+    font-size:medium;
+    margin-left: 40px;
+}
+article sup{
+    color: red;
+}
+article #male{
+    width: 15px;
+}
+article .man{
+    margin-left: 0;
+    font-family: 'Newsreader', serif;
+}
+article #female{
+    width: 15px;
+    margin-left: 10px;
+}
+article .woman{
+    margin-left: 0;
+    font-family: 'Newsreader', serif;
+}
+article .radio{
+    padding-bottom: 30px;
+}
+article button{
+    padding: 15px 195px 15px 205px;
+    border:outset;
+    border-radius: 10px;
+    background: #2e91e1;
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+footer {
+    padding: 0rem;
+}
+footer p {
+    text-align: center;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    color: #fff;
+    padding: 0rem 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 3px solid #3693ff;
+}
+
+#navbar ul {
+    display: flex;
+    align-items:center ;
+    list-style: none;
+}
+
+#navbar h2 a{
+    color:#3693ff;
+    text-decoration: none;  
+}
+
+#navbar li a{
+    text-decoration: none;
+    color: #fff;padding: 1rem;
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+#navbar li a:hover {
+    background-color: #3693ff;
+}
